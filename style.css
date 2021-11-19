@@ -1,0 +1,26 @@
+.wrapper
+{
+    background: rgb(212, 209, 209);
+}
+
+.header
+{
+    background: grey;
+
+}
+
+.word
+{
+    background:rgb(240, 163, 163);
+}
+
+.line
+{
+    background:navy;
+    height: 10px;
+}
+
+.letters 
+{
+    background:salmon;
+}
