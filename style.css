@@ -1,42 +1,86 @@
 .wrapper
-{
+{   
+    margin-left: auto;
+    margin-right: auto;
+    width: 600px;
+    height: 400px;
     background: rgb(212, 209, 209);
 }
 
-.header
+.header h1
 {
-    background: grey;
-
+    text-align: center;
+    padding-top: 20px;
 }
 
-.word
+.menu ul li
+{   text-decoration: none;
+    list-style-type:none;
+	height:25px;
+    width: 100px;
+	margin-bottom:2px;
+	background-color: #979492;
+    padding: 10px 10px 10px 10px;
+    display: inline-block;
+    align-items: center;  
+    border-radius:8px 8px 8px 8px;
+    box-shadow: 2px 2px #e4e0e0;
+}
+
+.menu ul li:hover
 {
-    background:rgb(240, 163, 163);
-    padding: 5px 5px 5px 5px;
-    
+    background:darkgray;   
+}
+.menu ul li a{
+    text-decoration: none;
+    color: honeydew;
+}
+.menu ul li a:hover{
+    text-decoration: none;
+    color:rgb(88, 86, 86);
+}
+.content{
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    background:rgb(240, 163, 163)
+}
+.word
+{    
+    padding: 10px 10px 10px 10px;   
+}
+
+.word p{
+    text-align: center;
 }
 
 .line
-{
-    background:navy;
+{   
+    background:rgb(146, 145, 145);
     height: 10px;
 }
 
-
 .letters 
-{
-    background:salmon;
-    vertical-align: middle;
-    padding: 5px 5px 5px 5px;
+{   
+    padding: 10px 10px 10px 10px;
 }
 
 .block
 {
     display: inline-block;
     background:rgb(212, 208, 208);
-    border: 2px solid rgb(102, 99, 99);
+    border: 3px solid rgb(102, 99, 99);
     padding: 10px 0px 10px 0px;
+    margin-right: 10px;
     width: 40px;
     text-align: center;
 }
+
+.block:hover
+{   
+    background:rgb(235, 156, 156);
+    border: 3px solid rgb(212, 32, 56); 
+    cursor:pointer; 
+}
+
 
