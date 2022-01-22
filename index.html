@@ -9,7 +9,7 @@
     <script src="script.js"></script>
     <title>Burtu spēle</title>
 </head>
-<body>
+<body onload="loadButtonText();">
  <div class="wrapper">
     <div class="header">
         <h1>Burtu spēle</h1>
@@ -30,11 +30,11 @@
             <p><strong>SASTĀDI VĀRDU!</strong></p>   
         <div class="line"></div> <!--beidzas line--> 
         <div id="word">
-          <input type="button" value="*" id="00"></input>
-          <input type="button" value="*" id="01"></input> 
-          <input type="button" value="*" id="02"></input> 
-          <input type="button" value="*" id="03"></input> 
-          <input type="button" value="*" id="04"></input> 
+          <input type="button" value="*" id="00" onclick="replaceButtonText(this.id,'ddd');"></input>
+          <input type="button" value="*" id="01" onclick="replaceButtonText(this.id,'g');"></input> 
+          <input type="button" value="*" id="02" onclick="replaceButtonText(this.id,'v');"></input> 
+          <input type="button" value="*" id="03" onclick="replaceButtonText(this.id,'e');"></input> 
+          <input type="button" value="*" id="04" onclick="replaceButtonText(this.id,'y');"></input> 
            </div>
     </div> <!--beidzas content--> 
 

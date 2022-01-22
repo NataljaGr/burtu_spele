@@ -37,7 +37,7 @@ function BurtuIzveide(){
 
 function replaceButtonText(buttonId, text)
 {
-  if (document.getElementById)
+  if (document.getElementById(buttonId))
   {
     var button=document.getElementById(buttonId);
     if (button)
@@ -48,6 +48,7 @@ function replaceButtonText(buttonId, text)
       }
       else if (button.value)
       {
+        
         button.value=text;
       }
       else //if (button.innerHTML)
@@ -58,9 +59,15 @@ function replaceButtonText(buttonId, text)
   }
 }   
 
+function loadButtonText () {
+    for (let i=0; i<burti.length; i++){
+      replaceButtonText('0'+i,burti[i]);
+    
+    }
+}
+
 jaunsVards();
 BurtuIzveide();
 //BurtiPogaa();
 //console.log(g);
 console.log(burti);
-replaceButtonText('00','456560');
